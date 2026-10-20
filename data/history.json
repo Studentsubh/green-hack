@@ -1,0 +1,84 @@
+[
+  {
+    "id": "618a5329-9f86-4f8c-be10-4910761efd0c",
+    "createdAt": "2026-10-20T13:09:56.907Z",
+    "device": "Smartphone",
+    "symptoms": "phone blasted\r\n",
+    "result": {
+      "verdict": "recycle",
+      "likely_cause": "Catastrophic lithium-ion battery thermal runaway leading to internal combustion and explosion.",
+      "confidence": "high",
+      "difficulty": "hard",
+      "time": "Immediate containment required",
+      "tools": [
+        "Fire-safe metal container",
+        "Sand or vermiculite",
+        "Heat-resistant safety gloves",
+        "Safety goggles",
+        "Respirator mask"
+      ],
+      "parts": [
+        "None (device is beyond economic and safe repair)"
+      ],
+      "steps": [
+        "Do not attempt to power on, charge, or disassemble the device under any circumstances.",
+        "Allow the device to fully cool down in an open, well-ventilated area away from flammable materials.",
+        "Put on protective gloves, eye protection, and a mask to prevent contact with toxic residues and sharp debris.",
+        "Carefully place the damaged smartphone into a non-combustible metal container filled with sand or kitty litter.",
+        "Seal the container loosely to prevent pressure buildup while isolating the device from oxygen.",
+        "Store the container in a cool, dry outdoor location well away from living spaces and structures.",
+        "Contact your local municipal hazardous waste collection program or specialized lithium battery disposal facility immediately."
+      ],
+      "safety": [
+        "CRITICAL FIRE HAZARD: Severed or ruptured lithium-ion cells can reignite spontaneously hours or days later.",
+        "TOXIC FUMES: Avoid inhaling smoke, gases, or dust particles produced by the battery combustion.",
+        "CHEMICAL BURNS: Do not touch leaked electrolyte fluid or caustic battery residue with bare hands.",
+        "SHARP EDGES: Shattered glass and torn metal frames present severe cut and puncture risks."
+      ],
+      "disposal": "This device qualifies as hazardous waste due to a damaged/defective lithium-ion battery. Do not place it in household trash or standard recycling bins. Deliver it strictly to a certified hazardous household waste (HHW) facility or an e-waste handler equipped for damaged lithium batteries."
+    }
+  },
+  {
+    "id": "1c00486a-7aab-4bae-bcd0-3ea50493426a",
+    "createdAt": "2026-10-20T13:03:02.243Z",
+    "device": "Smartphone",
+    "symptoms": "Screen cracked\r\n",
+    "result": {
+      "verdict": "repair",
+      "likely_cause": "Severe mechanical impact causing shattered front glass and display assembly damage",
+      "confidence": "high",
+      "difficulty": "moderate",
+      "time": "45-60 minutes",
+      "tools": [
+        "Pentalobe (P2) screwdriver",
+        "Tri-point (Y000) screwdriver",
+        "Phillips #000 screwdriver",
+        "Suction handle",
+        "Plastic spudger and opening picks",
+        "Heat gun or hair dryer",
+        "Clear packing tape",
+        "Tweezers"
+      ],
+      "parts": [
+        "Replacement display assembly (LCD/OLED + digitizer)",
+        "Pre-cut display adhesive seal"
+      ],
+      "steps": [
+        "Cover the shattered front screen with clear packing tape to contain glass shards and allow suction cup adhesion.",
+        "Power off the device completely and remove the two pentalobe screws flanking the charging port.",
+        "Gently warm the perimeter of the screen with a hair dryer or heat gun (approx. 60-70°C) to soften the waterproof adhesive.",
+        "Attach a suction cup near the bottom and gently pry open the screen assembly from the side, being careful not to tear flex cables.",
+        "Unscrew the battery connector bracket and immediately disconnect the battery cable using a plastic spudger to prevent short circuits.",
+        "Unscrew the display cable bracket and disconnect the display and digitizer flex cables from the logic board.",
+        "Transfer the home button/Touch ID sensor and top speaker/camera assembly to the new screen (or use a fully pre-assembled unit).",
+        "Apply new perimeter adhesive, reconnect display and battery cables, test functionality before pressing the display back into place, and secure bottom screws."
+      ],
+      "safety": [
+        "Lithium-ion battery hazard: Do not puncture, bend, or use sharp metal tools near the battery, as it can cause thermal runaway or fire.",
+        "Sharp glass hazard: Wear safety glasses and nitrile gloves to protect against loose glass splinters.",
+        "Disconnect battery first: Never connect or disconnect screen cables while the battery is attached to avoid blowing backlight fuses."
+      ],
+      "disposal": "Take the shattered display assembly and any unusable parts to an authorized electronics recycling drop-off center; do not dispose of electronic glass in household trash."
+    }
+  }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f0">
+  <title>RepairX — Repair intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="RepairX home"><span class="brand-mark">R<span>×</span></span><span>repair<span class="brand-light">x</span></span></a>
+      <div class="topbar-right"><span class="live-dot"></span><span>Repair intelligence</span><span class="topbar-divider"></span><span class="today" id="today"></span></div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE FUTURE IS REPAIRABLE</p>
+        <h1>Make your next<br>move <span>matter.</span></h1>
+        <p class="hero-sub">Get a clear diagnosis, practical next steps, and a better outcome for your device.</p>
+        <a class="hero-link" href="#diagnose">Start a diagnosis <span>↓</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract sustainable technology illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div><div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div>
+        <div class="art-device"><div class="device-camera"></div><div class="device-screen"><span>R</span><i></i><i></i><i></i></div></div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✳</div>
+        <div class="art-caption"><span>01 / 03</span><span>LESS WASTE. MORE LIFE.</span></div>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="Repair statistics">
+      <article class="stat-card stat-primary"><div class="stat-top"><span>Diagnoses</span><span class="stat-icon">↗</span></div><div class="stat-value" data-stat="total">0</div><div class="stat-foot">devices checked</div><div class="stat-sparkline"><svg viewBox="0 0 220 42" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34 C20 30 22 33 39 22 S62 27 79 14 S101 25 119 17 S143 22 159 9 S185 19 220 2"/></svg></div></article>
+      <article class="stat-card"><div class="stat-top"><span>Repairable</span><span class="mini-icon green">↗</span></div><div class="stat-value" data-stat="repair">0<span class="stat-unit">%</span></div><div class="stat-foot">with a DIY path</div><div class="stat-track"><span data-progress="repair"></span></div></article>
+      <article class="stat-card"><div class="stat-top"><span>Kept in use</span><span class="mini-icon orange">♧</span></div><div class="stat-value" data-stat="saved">0<span class="stat-unit">%</span></div><div class="stat-foot">repair or expert care</div><div class="stat-track orange-track"><span data-progress="saved"></span></div></article>
+      <article class="stat-card stat-note"><span class="note-kicker">SMALL FIXES, BIG IMPACT</span><div class="note-art">✳</div><p>Every repair is a reason to keep good tech around longer.</p><span class="note-bottom">REPAIR FIRST · RECYCLE RIGHT</span></article>
+    </section>
+
+    <section class="workspace" id="diagnose">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR WORKBENCH</p><h2>Let’s take a closer look.</h2></div><span class="secure-label"><span>✦</span> AI-powered assessment</span></div>
+      <div class="work-grid">
+        <form id="form" class="panel form-panel">
+          <div class="panel-title"><span class="step-index">01</span><div><h3>Tell us what’s up</h3><p>Share a few details to get started.</p></div></div>
+          <label for="device">What are we looking at?</label>
+          <div class="select-wrap"><select id="device" name="device"><option>Smartphone</option><option>Laptop</option><option>Tablet</option><option>Headphones / earbuds</option><option>Charger / power adapter</option><option>TV / monitor</option><option>Small appliance</option><option>Other</option></select><span>⌄</span></div>
+          <label for="symptoms">Describe the problem</label>
+          <textarea id="symptoms" name="symptoms" placeholder="For example: it won’t charge, the battery drains fast, or the screen is cracked…" required></textarea>
+          <label for="image">Add a photo <span class="optional">OPTIONAL</span></label>
+          <label class="upload-zone" for="image"><span class="upload-icon">↥</span><span class="upload-copy"><strong>Drop an image here or <u>browse</u></strong><small>JPG, PNG or WEBP · Up to 8 MB</small></span><span id="file-name" class="file-name"></span></label>
+          <input id="image" name="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+          <button id="go" type="submit"><span>Get my diagnosis</span><span class="button-arrow">↗</span></button>
+          <p id="status" class="status" aria-live="polite"></p>
+          <p class="privacy-note"><span>◈</span> Your information stays private and secure.</p>
+        </form>
+        <aside class="insight-column">
+          <article class="panel insight-panel"><div class="panel-title compact"><span class="insight-icon">⌁</span><div><h3>Repair outlook</h3><p>Across your recent diagnoses</p></div><span class="chart-menu">···</span></div>
+            <div class="donut-wrap"><div class="donut" id="outlook-chart" style="--repair:0%;--pro:0%;--recycle:0%"><div class="donut-center"><strong id="outlook-total">0</strong><span>checks</span></div></div><div class="chart-legend"><div><i class="legend-dot dot-repair"></i><span>DIY repair</span><strong data-legend="repair">0</strong></div><div><i class="legend-dot dot-pro"></i><span>Expert help</span><strong data-legend="professional">0</strong></div><div><i class="legend-dot dot-recycle"></i><span>Recycle</span><strong data-legend="recycle">0</strong></div></div></div>
+          </article>
+          <article class="panel activity-panel"><div class="panel-title compact"><span class="insight-icon activity-icon">⌖</span><div><h3>Recent activity</h3><p>Your last seven checks</p></div><span class="activity-total" id="activity-total">0 / 7</span></div><div class="bar-chart" id="activity-chart" aria-label="Diagnoses by day over the last seven days"></div><div class="chart-axis"><span>7 days ago</span><span>Today</span></div></article>
+          <div class="tip-card"><span class="tip-mark">✳</span><p><strong>A little care goes a long way.</strong><br>Safe, informed repairs help reduce e-waste.</p><span class="tip-arrow">↗</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="results-section" id="results-section"><div class="section-heading history-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR REPAIR LOG</p><h2>All your check-ins.</h2></div><span class="history-count" id="history-count">0 SAVED</span></div><div id="out"></div><div id="history" class="history-list"></div></section>
+    <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">R<span>×</span></span><span>repair<span class="brand-light">x</span></span></a><span>Built for a world with less waste.</span><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
